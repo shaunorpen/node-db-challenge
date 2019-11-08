@@ -4,6 +4,7 @@ exports.up = function(knex) {
       table.increments();
       table.string("name").notNullable();
       table.string("description");
+      table.boolean("completed").defaultTo(0);
     })
     .createTable("resources", table => {
       table.increments();
@@ -14,6 +15,7 @@ exports.up = function(knex) {
       table.increments();
       table.string("description").notNullable();
       table.string("notes");
+      table.boolean("completed").defaultTo(0);
       table
         .integer("project_id")
         .notNullable()
