@@ -40,11 +40,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+A relational database is a database where records in tables are referred to using keys. Each row in a table has a unique key which can be used to access it. Records in one table can refer to records in other tables using just their key to define the relationship. 
+
+SQL - Structured Query Language - is the language used to interact with relational databases. It is split into parts which allow users to do different things. For example DDL enables users to define and update tables. DML allows users to manipulate data in tables. DQL allows users to query the data held in tables.
+
 - [ ] Why do tables need a `primary key`?
+
+Primary keys are used to uniquely refer to each row in a table.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+Foreign key.
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+A junction table.
 
 ## Minimum Viable Product
 
